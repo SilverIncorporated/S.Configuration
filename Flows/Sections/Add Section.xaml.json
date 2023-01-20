@@ -1,0 +1,42 @@
+{
+  "DisplayName": "Add Section",
+  "Tooltip": null,
+  "HelpLink": null,
+  "Color": null,
+  "OriginalIconFileName": null,
+  "Arguments": [
+    {
+      "Name": "Name",
+      "DisplayName": "Name",
+      "Category": null,
+      "Tooltip": "Name of the section to add",
+      "Placeholder": null,
+      "Widget": "TextComposer",
+      "IsRequired": true,
+      "IsPrincipal": true,
+      "DataSourceItems": []
+    },
+    {
+      "Name": "Section",
+      "DisplayName": "Section",
+      "Category": null,
+      "Tooltip": "Section created and added to config",
+      "Placeholder": null,
+      "Widget": null,
+      "IsRequired": true,
+      "IsPrincipal": true,
+      "DataSourceItems": []
+    },
+    {
+      "Name": "Config",
+      "DisplayName": "Config",
+      "Category": null,
+      "Tooltip": "Config to get section from",
+      "Placeholder": null,
+      "Widget": null,
+      "IsRequired": true,
+      "IsPrincipal": true,
+      "DataSourceItems": []
+    }
+  ]
+}

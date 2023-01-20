@@ -1,0 +1,214 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="TestCase_AllConfiguration" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="514,4288.666666666667" sap2010:WorkflowViewState.IdRef="TestCase_AllConfiguration_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:scn="clr-namespace:S.Configuration.NET;assembly=S.Configuration.NET" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="24">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>S.Configuration.NET</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="58">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>S.Configuration.NET</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="TestCase_AllConfiguration" sap:VirtualizedContainerService.HintSize="524,4224" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="scn:Section" Name="Section" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="... Given" sap:VirtualizedContainerService.HintSize="462,104.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </Sequence>
+    <Sequence DisplayName="... When" sap:VirtualizedContainerService.HintSize="462,3824" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="scn:Config" Name="Config" />
+        <Variable x:TypeArguments="x:String" Name="Json" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Flows\\Configuration\\Create Config.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="400,153.33333333333334" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Flows\\Configuration\\Create Config.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <OutArgument x:TypeArguments="scn:Config" x:Key="Config">
+            <CSharpReference x:TypeArguments="scn:Config" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">Config</CSharpReference>
+          </OutArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Flows\\Sections\\Add Section.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="400,589.3333333333334" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Flows\\Sections\\Add Section.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="Name">Section 1</InArgument>
+          <OutArgument x:TypeArguments="scn:Section" x:Key="Section">
+            <CSharpReference x:TypeArguments="scn:Section" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">Section</CSharpReference>
+          </OutArgument>
+          <InOutArgument x:TypeArguments="scn:Config" x:Key="Config">
+            <CSharpReference x:TypeArguments="scn:Config" sap2010:WorkflowViewState.IdRef="CSharpReference`1_6">Config</CSharpReference>
+          </InOutArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Flows\\Settings\\Add Setting to Section.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="400,364" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_12" UnSafe="False" WorkflowFileName="Flows\\Settings\\Add Setting to Section.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="scn:Section" x:Key="Section">
+            <CSharpValue x:TypeArguments="scn:Section" sap2010:WorkflowViewState.IdRef="CSharpValue`1_19">Section</CSharpValue>
+          </InArgument>
+          <InArgument x:TypeArguments="scn:Config" x:Key="Config">
+            <CSharpValue x:TypeArguments="scn:Config" sap2010:WorkflowViewState.IdRef="CSharpValue`1_20">Config</CSharpValue>
+          </InArgument>
+          <OutArgument x:TypeArguments="scn:Setting" x:Key="Setting" />
+          <InArgument x:TypeArguments="x:String" x:Key="Value">Value</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="Name">Setting2</InArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Flows\\Configuration\\Config to Text.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="400,206" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="Flows\\Configuration\\Config to Text.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="scn:Config" x:Key="Config">
+            <CSharpValue x:TypeArguments="scn:Config" sap2010:WorkflowViewState.IdRef="CSharpValue`1_8">Config</CSharpValue>
+          </InArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="Json">
+            <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_3">Json</CSharpReference>
+          </OutArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Flows\\Configuration\\Text to Config.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="400,206" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="Flows\\Configuration\\Text to Config.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <OutArgument x:TypeArguments="scn:Config" x:Key="Config">
+            <CSharpReference x:TypeArguments="scn:Config" sap2010:WorkflowViewState.IdRef="CSharpReference`1_4">Config</CSharpReference>
+          </OutArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="Json">
+            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_9">Json</CSharpValue>
+          </InArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Flows\\Sections\\Add Section.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="400,258.6666666666667" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_8" UnSafe="False" WorkflowFileName="Flows\\Sections\\Add Section.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="Name">Section2</InArgument>
+          <OutArgument x:TypeArguments="scn:Section" x:Key="Section">
+            <CSharpReference x:TypeArguments="scn:Section" sap2010:WorkflowViewState.IdRef="CSharpReference`1_5">Section</CSharpReference>
+          </OutArgument>
+          <InOutArgument x:TypeArguments="scn:Config" x:Key="Config">
+            <CSharpReference x:TypeArguments="scn:Config" sap2010:WorkflowViewState.IdRef="CSharpReference`1_7">Config</CSharpReference>
+          </InOutArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Flows\\Settings\\Add Setting to Section.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="400,364" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" UnSafe="False" WorkflowFileName="Flows\\Settings\\Add Setting to Section.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InOutArgument x:TypeArguments="scn:Section" x:Key="Section">
+            <CSharpReference x:TypeArguments="scn:Section" sap2010:WorkflowViewState.IdRef="CSharpReference`1_8">Section</CSharpReference>
+          </InOutArgument>
+          <InOutArgument x:TypeArguments="scn:Config" x:Key="Config">
+            <CSharpReference x:TypeArguments="scn:Config" sap2010:WorkflowViewState.IdRef="CSharpReference`1_9">Config</CSharpReference>
+          </InOutArgument>
+          <OutArgument x:TypeArguments="scn:Setting" x:Key="Setting" />
+          <InArgument x:TypeArguments="x:String" x:Key="Value">Value</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="Name">Setting3</InArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Flows\\Settings\\Get Configuration Setting Value.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="400,311.3333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_10" UnSafe="False" WorkflowFileName="Flows\\Settings\\Get Configuration Setting Value.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="scn:Config" x:Key="Config">
+            <CSharpValue x:TypeArguments="scn:Config" sap2010:WorkflowViewState.IdRef="CSharpValue`1_15">Config</CSharpValue>
+          </InArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="Value" />
+          <InArgument x:TypeArguments="x:String" x:Key="Name">Setting3</InArgument>
+          <InArgument x:TypeArguments="scn:Section" x:Key="Section">
+            <CSharpValue x:TypeArguments="scn:Section" sap2010:WorkflowViewState.IdRef="CSharpValue`1_16">Section</CSharpValue>
+          </InArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Flows\\Settings\\Get Configuration Setting Value.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="400,311.3333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_11" UnSafe="False" WorkflowFileName="Flows\\Settings\\Get Configuration Setting Value.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="scn:Config" x:Key="Config">
+            <CSharpValue x:TypeArguments="scn:Config" sap2010:WorkflowViewState.IdRef="CSharpValue`1_17">Config</CSharpValue>
+          </InArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="Value" />
+          <InArgument x:TypeArguments="x:String" x:Key="Name">Setting2</InArgument>
+          <InArgument x:TypeArguments="scn:Section" x:Key="Section" />
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Flows\\Sections\\Get Section.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="400,589.3333333333334" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_13" UnSafe="False" WorkflowFileName="Flows\\Sections\\Get Section.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="Name">Section 1</InArgument>
+          <InArgument x:TypeArguments="scn:Config" x:Key="Config">
+            <CSharpValue x:TypeArguments="scn:Config" sap2010:WorkflowViewState.IdRef="CSharpValue`1_21">Config</CSharpValue>
+          </InArgument>
+          <OutArgument x:TypeArguments="scn:Section" x:Key="Section">
+            <CSharpReference x:TypeArguments="scn:Section" sap2010:WorkflowViewState.IdRef="CSharpReference`1_10">Section</CSharpReference>
+          </OutArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+    </Sequence>
+    <Sequence DisplayName="... Then" sap:VirtualizedContainerService.HintSize="462,104.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_4">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </Sequence>
+  </Sequence>
+</Activity>

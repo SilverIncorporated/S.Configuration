@@ -1,0 +1,31 @@
+{
+  "DisplayName": "Config to Text",
+  "Tooltip": "Turns a config into a serialized json string",
+  "HelpLink": null,
+  "Color": null,
+  "OriginalIconFileName": null,
+  "Arguments": [
+    {
+      "Name": "Config",
+      "DisplayName": "Config",
+      "Category": null,
+      "Tooltip": "Config to convert",
+      "Placeholder": null,
+      "Widget": null,
+      "IsRequired": true,
+      "IsPrincipal": true,
+      "DataSourceItems": []
+    },
+    {
+      "Name": "Json",
+      "DisplayName": "Json",
+      "Category": null,
+      "Tooltip": "Josn string response",
+      "Placeholder": null,
+      "Widget": "TextComposer",
+      "IsRequired": true,
+      "IsPrincipal": true,
+      "DataSourceItems": []
+    }
+  ]
+}

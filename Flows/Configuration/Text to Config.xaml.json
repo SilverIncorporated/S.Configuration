@@ -1,0 +1,31 @@
+{
+  "DisplayName": "Text to Config",
+  "Tooltip": "Deserialize json object to config type",
+  "HelpLink": null,
+  "Color": null,
+  "OriginalIconFileName": null,
+  "Arguments": [
+    {
+      "Name": "Config",
+      "DisplayName": "Config",
+      "Category": null,
+      "Tooltip": "Config produced",
+      "Placeholder": null,
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "DataSourceItems": []
+    },
+    {
+      "Name": "Json",
+      "DisplayName": "Json",
+      "Category": null,
+      "Tooltip": "json object input",
+      "Placeholder": null,
+      "Widget": "TextComposer",
+      "IsRequired": true,
+      "IsPrincipal": true,
+      "DataSourceItems": []
+    }
+  ]
+}

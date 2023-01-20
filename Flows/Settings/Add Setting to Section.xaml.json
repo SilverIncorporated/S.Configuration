@@ -1,0 +1,64 @@
+{
+  "DisplayName": "Add Setting to Section",
+  "Tooltip": "Adds setting to given section",
+  "HelpLink": null,
+  "Color": null,
+  "OriginalIconFileName": null,
+  "Arguments": [
+    {
+      "Name": "Config",
+      "DisplayName": "Config",
+      "Category": null,
+      "Tooltip": "Config to add setting",
+      "Placeholder": null,
+      "Widget": null,
+      "IsRequired": true,
+      "IsPrincipal": true,
+      "DataSourceItems": []
+    },
+    {
+      "Name": "Section",
+      "DisplayName": "Section",
+      "Category": null,
+      "Tooltip": "Section to add setting",
+      "Placeholder": null,
+      "Widget": null,
+      "IsRequired": true,
+      "IsPrincipal": true,
+      "DataSourceItems": []
+    },
+    {
+      "Name": "Name",
+      "DisplayName": "Name",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": null,
+      "Widget": "TextComposer",
+      "IsRequired": true,
+      "IsPrincipal": true,
+      "DataSourceItems": []
+    },
+    {
+      "Name": "Value",
+      "DisplayName": "Value",
+      "Category": null,
+      "Tooltip": "Value of setting",
+      "Placeholder": null,
+      "Widget": "TextComposer",
+      "IsRequired": true,
+      "IsPrincipal": true,
+      "DataSourceItems": []
+    },
+    {
+      "Name": "Setting",
+      "DisplayName": "Setting",
+      "Category": null,
+      "Tooltip": "Setting added",
+      "Placeholder": null,
+      "Widget": "TextComposer",
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "DataSourceItems": []
+    }
+  ]
+}
