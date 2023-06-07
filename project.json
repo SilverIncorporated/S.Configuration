@@ -5,7 +5,7 @@
   "dependencies": {
     "S.Configuration.NET": "1.1.1",
     "S.Configuration.Objects": "1.0.1",
-    "UiPath.System.Activities": "23.6.0-alpha.3959442",
+    "UiPath.System.Activities": "23.4.3",
     "UiPath.WebAPI.Activities": "1.16.2"
   },
   "webServices": [],
