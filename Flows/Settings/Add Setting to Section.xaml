@@ -1,16 +1,16 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Add_Setting_to_Section" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:scn="clr-namespace:S.Configuration.NET;assembly=S.Configuration.NET" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Add_Setting_to_Section" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:S.Configuration.Objects;assembly=S.Configuration.Objects.Core" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
-    <x:Property sap2010:Annotation.AnnotationText="Section to add setting" Name="Section" Type="InOutArgument(scn:Section)">
+    <x:Property sap2010:Annotation.AnnotationText="Section to add setting" Name="Section" Type="InOutArgument(sco:Section)">
       <x:Property.Attributes>
         <RequiredArgumentAttribute />
       </x:Property.Attributes>
     </x:Property>
-    <x:Property sap2010:Annotation.AnnotationText="Config to add setting" Name="Config" Type="InOutArgument(scn:Config)">
+    <x:Property sap2010:Annotation.AnnotationText="Config to add setting" Name="Config" Type="InOutArgument(sco:Config)">
       <x:Property.Attributes>
         <RequiredArgumentAttribute />
       </x:Property.Attributes>
     </x:Property>
-    <x:Property sap2010:Annotation.AnnotationText="Setting added" Name="Setting" Type="OutArgument(scn:Setting)" />
+    <x:Property sap2010:Annotation.AnnotationText="Setting added" Name="Setting" Type="OutArgument(sco:Setting)" />
     <x:Property sap2010:Annotation.AnnotationText="Value of setting" Name="Value" Type="InArgument(x:String)">
       <x:Property.Attributes>
         <RequiredArgumentAttribute />
@@ -24,7 +24,7 @@
   </x:Members>
   <sap2010:Annotation.AnnotationText>UPTF000000ACeyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjoiQWRkcyBzZXR0aW5nIHRvIGdpdmVuIHNlY3Rpb24iLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9</sap2010:Annotation.AnnotationText>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
-  <sap:VirtualizedContainerService.HintSize>1406,920</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1357.3333333333333,920</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="44">
@@ -51,7 +51,7 @@
       <x:String>System.Collections.ObjectModel</x:String>
       <x:String>System.Reflection</x:String>
       <x:String>System.Linq.Expressions</x:String>
-      <x:String>S.Configuration.NET</x:String>
+      <x:String>S.Configuration.Objects</x:String>
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -90,25 +90,26 @@
       <AssemblyReference>System.ComponentModel</AssemblyReference>
       <AssemblyReference>System.Memory</AssemblyReference>
       <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>S.Configuration.Objects.Core</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Adds setting to given section" DisplayName="Add_Setting_to_Section" sap:VirtualizedContainerService.HintSize="496,334.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Adds setting to given section" DisplayName="Add_Setting_to_Section" sap:VirtualizedContainerService.HintSize="512,334.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <x:Boolean x:Key="IsAnnotationDocked">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:Comment sap:VirtualizedContainerService.HintSize="434,98.66666666666667" sap2010:WorkflowViewState.IdRef="Comment_1" Text="Add a configuration setting to the config section specified" />
-    <Assign DisplayName="Assign - Setting" sap:VirtualizedContainerService.HintSize="434,85.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_3">
+    <ui:Comment sap:VirtualizedContainerService.HintSize="450,98.66666666666667" sap2010:WorkflowViewState.IdRef="Comment_1" Text="Add a configuration setting to the config section specified" />
+    <Assign DisplayName="Assign - Setting" sap:VirtualizedContainerService.HintSize="450,85.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_4">
       <Assign.To>
-        <OutArgument x:TypeArguments="scn:Setting">
-          <CSharpReference x:TypeArguments="scn:Setting" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">Setting</CSharpReference>
+        <OutArgument x:TypeArguments="sco:Setting">
+          <CSharpReference x:TypeArguments="sco:Setting" sap2010:WorkflowViewState.IdRef="CSharpReference`1_4">Setting</CSharpReference>
         </OutArgument>
       </Assign.To>
       <Assign.Value>
-        <InArgument x:TypeArguments="scn:Setting">
-          <CSharpValue x:TypeArguments="scn:Setting" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">Config.AddSetting(Section, Name, Value)</CSharpValue>
+        <InArgument x:TypeArguments="sco:Setting">
+          <CSharpValue x:TypeArguments="sco:Setting" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">Config.AddSetting(Section, Name, Value)</CSharpValue>
         </InArgument>
       </Assign.Value>
     </Assign>

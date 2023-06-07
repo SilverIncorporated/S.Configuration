@@ -1,6 +1,6 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Test_to_Config" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:scn="clr-namespace:S.Configuration.NET;assembly=S.Configuration.NET" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Test_to_Config" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:S.Configuration.Objects;assembly=S.Configuration.Objects.Core" xmlns:sco1="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
-    <x:Property sap2010:Annotation.AnnotationText="Config produced&#xA;Type 'local:Config' ('clr-namespace:;assembly=S.Configuration.NET') could not be resolved and was automatically replaced with 'UnknownType'" Name="Config" Type="OutArgument(scn:Config)" />
+    <x:Property sap2010:Annotation.AnnotationText="Config produced&#xA;Type 'local:Config' ('clr-namespace:;assembly=S.Configuration.NET') could not be resolved and was automatically replaced with 'UnknownType'" Name="Config" Type="OutArgument(sco:Config)" />
     <x:Property sap2010:Annotation.AnnotationText="json object input" Name="Json" Type="InArgument(x:String)">
       <x:Property.Attributes>
         <RequiredArgumentAttribute />
@@ -9,10 +9,10 @@
   </x:Members>
   <sap2010:Annotation.AnnotationText>UPTF000000B8eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjoiRGVzZXJpYWxpemUganNvbiBvYmplY3QgdG8gY29uZmlnIHR5cGUiLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9</sap2010:Annotation.AnnotationText>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
-  <sap:VirtualizedContainerService.HintSize>1406,920</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1357.3333333333333,920</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
-    <sco:Collection x:TypeArguments="x:String">
+    <sco1:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
       <x:String>System.Activities.Statements</x:String>
       <x:String>System.Activities.Expressions</x:String>
@@ -37,8 +37,8 @@
       <x:String>System.Reflection</x:String>
       <x:String>System.Linq.Expressions</x:String>
       <x:String>Newtonsoft.Json</x:String>
-      <x:String>S.Configuration.NET</x:String>
-    </sco:Collection>
+      <x:String>S.Configuration.Objects</x:String>
+    </sco1:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
     <scg:List x:TypeArguments="AssemblyReference" Capacity="50">
@@ -76,24 +76,27 @@
       <AssemblyReference>System.ComponentModel</AssemblyReference>
       <AssemblyReference>System.Memory</AssemblyReference>
       <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>S.Configuration.Objects.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Deserialize json object to config type" DisplayName="Text_to_Config" sap:VirtualizedContainerService.HintSize="496,334.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Deserialize json object to config type" DisplayName="Text_to_Config" sap:VirtualizedContainerService.HintSize="512,334.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:Comment sap:VirtualizedContainerService.HintSize="434,98.66666666666667" sap2010:WorkflowViewState.IdRef="Comment_1" Text="Convert a JSON object into a Config" />
-    <Assign DisplayName="Assign - Set Config" sap:VirtualizedContainerService.HintSize="434,85.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_1">
+    <ui:Comment sap:VirtualizedContainerService.HintSize="450,98.66666666666667" sap2010:WorkflowViewState.IdRef="Comment_1" Text="Convert a JSON object into a Config" />
+    <Assign DisplayName="Assign - Set Config" sap:VirtualizedContainerService.HintSize="450,85.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_2">
       <Assign.To>
-        <OutArgument x:TypeArguments="scn:Config">
-          <CSharpReference x:TypeArguments="scn:Config" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">Config</CSharpReference>
+        <OutArgument x:TypeArguments="sco:Config">
+          <CSharpReference x:TypeArguments="sco:Config" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">Config</CSharpReference>
         </OutArgument>
       </Assign.To>
       <Assign.Value>
-        <InArgument x:TypeArguments="scn:Config">
-          <CSharpValue x:TypeArguments="scn:Config" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">JsonConvert.DeserializeObject&lt;Config&gt;(Json)</CSharpValue>
+        <InArgument x:TypeArguments="sco:Config">
+          <CSharpValue x:TypeArguments="sco:Config" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">JsonConvert.DeserializeObject&lt;Config&gt;(Json)</CSharpValue>
         </InArgument>
       </Assign.Value>
     </Assign>
