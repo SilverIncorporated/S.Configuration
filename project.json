@@ -1,12 +1,13 @@
 {
   "name": "S.Configuration",
+  "projectId": "f429ce64-c73a-4a46-9f5c-662c9b367c5b",
   "description": "Configuration Library for SCALE Platform",
   "main": "NewActivity.xaml",
   "dependencies": {
     "S.Configuration.NET": "1.1.1",
-    "S.Configuration.Objects": "1.0.1",
-    "UiPath.System.Activities": "23.4.3",
-    "UiPath.WebAPI.Activities": "1.16.2"
+    "S.Configuration.Objects": "1.0.2",
+    "UiPath.System.Activities": "23.10.3",
+    "UiPath.WebAPI.Activities": "1.18.0"
   },
   "webServices": [],
   "entitiesStores": [],
@@ -53,7 +54,8 @@
         "fileName": "Flows\\TestCase_AllConfiguration.xaml"
       }
     ],
-    "modernBehavior": true
+    "modernBehavior": true,
+    "saveToCloud": false
   },
   "expressionLanguage": "CSharp",
   "isTemplate": false,
